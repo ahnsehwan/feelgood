@@ -6,7 +6,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -22,7 +22,7 @@ class SplashWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFEFAE0),
+      backgroundColor: const Color(0xFFFEFAE0),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -32,23 +32,24 @@ class SplashWidget extends StatelessWidget {
                 width: 150,
                 height: 150,
                 decoration: BoxDecoration(
-                  color: Color(0xFFCBE3D4),
+                  color: const Color(0xFFCBE3D4),
                   borderRadius: BorderRadius.circular(32),
                 ),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(32), // Container와 동일한 borderRadius 설정
+                  borderRadius: BorderRadius.circular(
+                      32), // Container와 동일한 borderRadius 설정
                   child: Image.network(
                     'https://cdn.pixabay.com/photo/2013/07/12/17/49/cartography-152510_1280.png',
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               RichText(
-                text: TextSpan(
+                text: const TextSpan(
                   text: 'E-TALK ',
                   style: TextStyle(
-                    fontFamily: 'Outfit', // 이 폰트가 pubspec.yaml에 포함되어 있어야 합니다
+                    fontFamily: 'Outfit', // 이 폰트가 .yaml에 포함되어 있어야 합니다
                     fontSize: 32,
                     fontWeight: FontWeight.w900,
                     fontStyle: FontStyle.italic,

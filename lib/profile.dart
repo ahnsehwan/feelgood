@@ -157,14 +157,14 @@ class MyPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: Color(0xFFE5E7EB),
+                  color: const Color(0xFFE5E7EB),
                   width: 1,
                 ),
               ),
@@ -194,7 +194,7 @@ class MyPage extends StatelessWidget {
                     color: Color(0xFF606A85),
                     size: 24,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Icon(
                     Icons.filter_1_rounded,
                     color: Colors.grey[600],

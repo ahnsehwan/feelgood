@@ -129,7 +129,7 @@ class _RentWidgetState extends State<RentWidget> {
                                 decoration: BoxDecoration(
                                   color: Theme.of(context).canvasColor,
                                   border: Border.all(
-                                    color: Color(0xFF282E2A),
+                                    color: const Color(0xFF282E2A),
                                   ),
                                 ),
                                 child: Column(

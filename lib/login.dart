@@ -91,7 +91,7 @@ class LoginPage extends StatelessWidget {
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(18),
                 borderSide: BorderSide.none),
-            fillColor: Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
+            fillColor: const Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
             filled: true,
             prefixIcon: const Icon(Icons.password),
           ),
@@ -104,7 +104,7 @@ class LoginPage extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             padding: const EdgeInsets.symmetric(vertical: 16),
-            backgroundColor: Color.fromARGB(255, 13, 100, 16),
+            backgroundColor: const Color.fromARGB(255, 13, 100, 16),
           ),
           child: const Text(
             "Login",
