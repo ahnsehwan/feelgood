@@ -1,22 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SignupPage(),
-    );
-  }
-}
-
-
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
 
@@ -62,7 +45,7 @@ class SignupPage extends StatelessWidget {
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(18),
                               borderSide: BorderSide.none),
-                          fillColor: const Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
+                          fillColor: Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
                           filled: true,
                           prefixIcon: const Icon(Icons.person)),
                     ),
@@ -75,7 +58,7 @@ class SignupPage extends StatelessWidget {
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(18),
                               borderSide: BorderSide.none),
-                          fillColor: const Color.fromRGBO(39, 106, 15, 0.941).withOpacity(0.1),
+                          fillColor: Color.fromRGBO(39, 106, 15, 0.941).withOpacity(0.1),
                           filled: true,
                           prefixIcon: const Icon(Icons.email)),
                     ),
@@ -88,7 +71,7 @@ class SignupPage extends StatelessWidget {
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(18),
                             borderSide: BorderSide.none),
-                        fillColor: const Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
+                        fillColor: Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
                         filled: true,
                         prefixIcon: const Icon(Icons.password),
                       ),
@@ -103,7 +86,7 @@ class SignupPage extends StatelessWidget {
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(18),
                             borderSide: BorderSide.none),
-                        fillColor: const Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
+                        fillColor: Color.fromARGB(255, 13, 100, 16).withOpacity(0.1),
                         filled: true,
                         prefixIcon: const Icon(Icons.password),
                       ),
@@ -120,7 +103,7 @@ class SignupPage extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                         shape: const StadiumBorder(),
                         padding: const EdgeInsets.symmetric(vertical: 16),
-                        backgroundColor: const Color.fromARGB(255, 13, 100, 16),
+                        backgroundColor: Color.fromARGB(255, 13, 100, 16),
                       ),
                       child: const Text(
                         "Sign up",
@@ -136,7 +119,7 @@ class SignupPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(25),
                     border: Border.all(
-                      color: const Color.fromARGB(255, 13, 100, 16),
+                      color: Color.fromARGB(255, 13, 100, 16),
                     ),
                     boxShadow: [
                       BoxShadow(

@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: "Check Box",
       debugShowCheckedModeBanner: false,
       home: CheckBoxs(),
@@ -40,7 +40,7 @@ class _CheckBoxsState extends State<CheckBoxs> {
           icon: Icon(Icons.west),
           onPressed: () {},
         ),
-        title: Text(
+        title: const Text(
           "payment",
           style: TextStyle(color: Color.fromRGBO(3, 2, 4, 199), fontSize: 30),
         ),
@@ -62,7 +62,7 @@ class _CheckBoxsState extends State<CheckBoxs> {
                       });
                     },
                   ),
-                  Text("Kakao")
+                  const Text("Kakao")
                 ],
               ),
             ),
@@ -79,7 +79,7 @@ class _CheckBoxsState extends State<CheckBoxs> {
                       });
                     },
                   ),
-                  Text("Pay pal")
+                  const Text("Pay pal")
                 ],
               ),
             ),
@@ -96,11 +96,11 @@ class _CheckBoxsState extends State<CheckBoxs> {
                       });
                     },
                   ),
-                  Text("Add payment card")
+                  const Text("Add payment card")
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             )
           ],
